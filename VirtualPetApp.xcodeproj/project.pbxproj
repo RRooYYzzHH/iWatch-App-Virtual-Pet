@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CBC51691E872A8C0067B36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC51681E872A8C0067B36C /* Assets.xcassets */; };
+		4CBC51701E872A8C0067B36C /* VirtualPetApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4CBC516F1E872A8C0067B36C /* VirtualPetApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4CBC51771E872A8C0067B36C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC51761E872A8C0067B36C /* InterfaceController.swift */; };
+		4CBC51791E872A8C0067B36C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC51781E872A8C0067B36C /* ExtensionDelegate.swift */; };
+		4CBC517B1E872A8C0067B36C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC517A1E872A8C0067B36C /* NotificationController.swift */; };
+		4CBC517D1E872A8C0067B36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC517C1E872A8C0067B36C /* Assets.xcassets */; };
+		4CBC51811E872A8C0067B36C /* VirtualPetApp WatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4CBC51631E872A8C0067B36C /* VirtualPetApp WatchKit.app */; };
+		4CBC518B1E8776D20067B36C /* PetListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC518A1E8776D20067B36C /* PetListController.swift */; };
+		4CBC518D1E8778D70067B36C /* petListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC518C1E8778D70067B36C /* petListRow.swift */; };
+		4CBC51911E877C4D0067B36C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC51901E877C4D0067B36C /* ComplicationController.swift */; };
+		4CBC51931E877F050067B36C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8083D191DD289F300DB6315 /* Pet.swift */; };
+		4CBC51961E878ECC0067B36C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC51951E878ECC0067B36C /* Interface.storyboard */; };
+		4CBC51C71E8796620067B36C /* PetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8083D1D1DD2AF7D00DB6315 /* PetExtensions.swift */; };
+		D8083D081DD2878F00DB6315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8083D071DD2878F00DB6315 /* AppDelegate.swift */; };
+		D8083D0A1DD2878F00DB6315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8083D091DD2878F00DB6315 /* ViewController.swift */; };
+		D8083D0D1DD2878F00DB6315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8083D0B1DD2878F00DB6315 /* Main.storyboard */; };
+		D8083D0F1DD2878F00DB6315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8083D0E1DD2878F00DB6315 /* Assets.xcassets */; };
+		D8083D121DD2878F00DB6315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8083D101DD2878F00DB6315 /* LaunchScreen.storyboard */; };
+		D8083D1A1DD289F300DB6315 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8083D191DD289F300DB6315 /* Pet.swift */; };
+		D8083D1C1DD2969000DB6315 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8083D1B1DD2969000DB6315 /* DisplayView.swift */; };
+		D8083D1E1DD2AF7D00DB6315 /* PetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8083D1D1DD2AF7D00DB6315 /* PetExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CBC51711E872A8C0067B36C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8083CFC1DD2878F00DB6315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CBC516E1E872A8C0067B36C;
+			remoteInfo = "VirtualPetApp WatchKit Extension";
+		};
+		4CBC517F1E872A8C0067B36C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8083CFC1DD2878F00DB6315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CBC51621E872A8C0067B36C;
+			remoteInfo = "VirtualPetApp WatchKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CBC51871E872A8C0067B36C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4CBC51701E872A8C0067B36C /* VirtualPetApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBC51891E872A8C0067B36C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4CBC51811E872A8C0067B36C /* VirtualPetApp WatchKit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4CBC51631E872A8C0067B36C /* VirtualPetApp WatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirtualPetApp WatchKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBC51681E872A8C0067B36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CBC516A1E872A8C0067B36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBC516F1E872A8C0067B36C /* VirtualPetApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VirtualPetApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBC51751E872A8C0067B36C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4CBC51761E872A8C0067B36C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4CBC51781E872A8C0067B36C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4CBC517A1E872A8C0067B36C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4CBC517C1E872A8C0067B36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CBC517E1E872A8C0067B36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBC518A1E8776D20067B36C /* PetListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetListController.swift; sourceTree = "<group>"; };
+		4CBC518C1E8778D70067B36C /* petListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petListRow.swift; sourceTree = "<group>"; };
+		4CBC51901E877C4D0067B36C /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		4CBC51951E878ECC0067B36C /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		D8083D041DD2878F00DB6315 /* VirtualPetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualPetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8083D071DD2878F00DB6315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8083D091DD2878F00DB6315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8083D0C1DD2878F00DB6315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8083D0E1DD2878F00DB6315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8083D111DD2878F00DB6315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8083D131DD2878F00DB6315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8083D191DD289F300DB6315 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		D8083D1B1DD2969000DB6315 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		D8083D1D1DD2AF7D00DB6315 /* PetExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CBC516C1E872A8C0067B36C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8083D011DD2878F00DB6315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CBC51641E872A8C0067B36C /* VirtualPetApp WatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC51951E878ECC0067B36C /* Interface.storyboard */,
+				4CBC51681E872A8C0067B36C /* Assets.xcassets */,
+				4CBC516A1E872A8C0067B36C /* Info.plist */,
+			);
+			path = "VirtualPetApp WatchKit";
+			sourceTree = "<group>";
+		};
+		4CBC51731E872A8C0067B36C /* VirtualPetApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC51761E872A8C0067B36C /* InterfaceController.swift */,
+				4CBC518A1E8776D20067B36C /* PetListController.swift */,
+				4CBC518C1E8778D70067B36C /* petListRow.swift */,
+				4CBC51781E872A8C0067B36C /* ExtensionDelegate.swift */,
+				4CBC517A1E872A8C0067B36C /* NotificationController.swift */,
+				4CBC51901E877C4D0067B36C /* ComplicationController.swift */,
+				4CBC517C1E872A8C0067B36C /* Assets.xcassets */,
+				4CBC517E1E872A8C0067B36C /* Info.plist */,
+				4CBC51741E872A8C0067B36C /* Supporting Files */,
+			);
+			path = "VirtualPetApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4CBC51741E872A8C0067B36C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC51751E872A8C0067B36C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8083CFB1DD2878F00DB6315 = {
+			isa = PBXGroup;
+			children = (
+				D8083D061DD2878F00DB6315 /* VirtualPetApp */,
+				4CBC51641E872A8C0067B36C /* VirtualPetApp WatchKit */,
+				4CBC51731E872A8C0067B36C /* VirtualPetApp WatchKit Extension */,
+				D8083D051DD2878F00DB6315 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8083D051DD2878F00DB6315 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8083D041DD2878F00DB6315 /* VirtualPetApp.app */,
+				4CBC51631E872A8C0067B36C /* VirtualPetApp WatchKit.app */,
+				4CBC516F1E872A8C0067B36C /* VirtualPetApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8083D061DD2878F00DB6315 /* VirtualPetApp */ = {
+			isa = PBXGroup;
+			children = (
+				D8083D071DD2878F00DB6315 /* AppDelegate.swift */,
+				D8083D091DD2878F00DB6315 /* ViewController.swift */,
+				D8083D191DD289F300DB6315 /* Pet.swift */,
+				D8083D1D1DD2AF7D00DB6315 /* PetExtensions.swift */,
+				D8083D1B1DD2969000DB6315 /* DisplayView.swift */,
+				D8083D0B1DD2878F00DB6315 /* Main.storyboard */,
+				D8083D0E1DD2878F00DB6315 /* Assets.xcassets */,
+				D8083D101DD2878F00DB6315 /* LaunchScreen.storyboard */,
+				D8083D131DD2878F00DB6315 /* Info.plist */,
+			);
+			path = VirtualPetApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CBC51621E872A8C0067B36C /* VirtualPetApp WatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBC51881E872A8C0067B36C /* Build configuration list for PBXNativeTarget "VirtualPetApp WatchKit" */;
+			buildPhases = (
+				4CBC51611E872A8C0067B36C /* Resources */,
+				4CBC51871E872A8C0067B36C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CBC51721E872A8C0067B36C /* PBXTargetDependency */,
+			);
+			name = "VirtualPetApp WatchKit";
+			productName = "VirtualPetApp WatchKit";
+			productReference = 4CBC51631E872A8C0067B36C /* VirtualPetApp WatchKit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4CBC516E1E872A8C0067B36C /* VirtualPetApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBC51861E872A8C0067B36C /* Build configuration list for PBXNativeTarget "VirtualPetApp WatchKit Extension" */;
+			buildPhases = (
+				4CBC516B1E872A8C0067B36C /* Sources */,
+				4CBC516C1E872A8C0067B36C /* Frameworks */,
+				4CBC516D1E872A8C0067B36C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VirtualPetApp WatchKit Extension";
+			productName = "VirtualPetApp WatchKit Extension";
+			productReference = 4CBC516F1E872A8C0067B36C /* VirtualPetApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		D8083D031DD2878F00DB6315 /* VirtualPetApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8083D161DD2878F00DB6315 /* Build configuration list for PBXNativeTarget "VirtualPetApp" */;
+			buildPhases = (
+				D8083D001DD2878F00DB6315 /* Sources */,
+				D8083D011DD2878F00DB6315 /* Frameworks */,
+				D8083D021DD2878F00DB6315 /* Resources */,
+				4CBC51891E872A8C0067B36C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CBC51801E872A8C0067B36C /* PBXTargetDependency */,
+			);
+			name = VirtualPetApp;
+			productName = VirtualPetApp;
+			productReference = D8083D041DD2878F00DB6315 /* VirtualPetApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8083CFC1DD2878F00DB6315 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nathan Gitter";
+				TargetAttributes = {
+					4CBC51621E872A8C0067B36C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PW5ET5HNB2;
+						ProvisioningStyle = Automatic;
+					};
+					4CBC516E1E872A8C0067B36C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D8083D031DD2878F00DB6315 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PW5ET5HNB2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8083CFF1DD2878F00DB6315 /* Build configuration list for PBXProject "VirtualPetApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8083CFB1DD2878F00DB6315;
+			productRefGroup = D8083D051DD2878F00DB6315 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8083D031DD2878F00DB6315 /* VirtualPetApp */,
+				4CBC51621E872A8C0067B36C /* VirtualPetApp WatchKit */,
+				4CBC516E1E872A8C0067B36C /* VirtualPetApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CBC51611E872A8C0067B36C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBC51961E878ECC0067B36C /* Interface.storyboard in Resources */,
+				4CBC51691E872A8C0067B36C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBC516D1E872A8C0067B36C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBC517D1E872A8C0067B36C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8083D021DD2878F00DB6315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8083D121DD2878F00DB6315 /* LaunchScreen.storyboard in Resources */,
+				D8083D0F1DD2878F00DB6315 /* Assets.xcassets in Resources */,
+				D8083D0D1DD2878F00DB6315 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CBC516B1E872A8C0067B36C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBC517B1E872A8C0067B36C /* NotificationController.swift in Sources */,
+				4CBC51C71E8796620067B36C /* PetExtensions.swift in Sources */,
+				4CBC51791E872A8C0067B36C /* ExtensionDelegate.swift in Sources */,
+				4CBC51771E872A8C0067B36C /* InterfaceController.swift in Sources */,
+				4CBC518D1E8778D70067B36C /* petListRow.swift in Sources */,
+				4CBC518B1E8776D20067B36C /* PetListController.swift in Sources */,
+				4CBC51931E877F050067B36C /* Pet.swift in Sources */,
+				4CBC51911E877C4D0067B36C /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8083D001DD2878F00DB6315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8083D1A1DD289F300DB6315 /* Pet.swift in Sources */,
+				D8083D1E1DD2AF7D00DB6315 /* PetExtensions.swift in Sources */,
+				D8083D1C1DD2969000DB6315 /* DisplayView.swift in Sources */,
+				D8083D0A1DD2878F00DB6315 /* ViewController.swift in Sources */,
+				D8083D081DD2878F00DB6315 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CBC51721E872A8C0067B36C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CBC516E1E872A8C0067B36C /* VirtualPetApp WatchKit Extension */;
+			targetProxy = 4CBC51711E872A8C0067B36C /* PBXContainerItemProxy */;
+		};
+		4CBC51801E872A8C0067B36C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CBC51621E872A8C0067B36C /* VirtualPetApp WatchKit */;
+			targetProxy = 4CBC517F1E872A8C0067B36C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8083D0B1DD2878F00DB6315 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8083D0C1DD2878F00DB6315 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8083D101DD2878F00DB6315 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8083D111DD2878F00DB6315 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CBC51821E872A8C0067B36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PW5ET5HNB2;
+				IBSC_MODULE = VirtualPetApp_WatchKit_Extension;
+				INFOPLIST_FILE = "VirtualPetApp WatchKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = nathangitter.VirtualPetApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		4CBC51831E872A8C0067B36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PW5ET5HNB2;
+				IBSC_MODULE = VirtualPetApp_WatchKit_Extension;
+				INFOPLIST_FILE = "VirtualPetApp WatchKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = nathangitter.VirtualPetApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		4CBC51841E872A8C0067B36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "VirtualPetApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nathangitter.VirtualPetApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		4CBC51851E872A8C0067B36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "VirtualPetApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nathangitter.VirtualPetApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		D8083D141DD2878F00DB6315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8083D151DD2878F00DB6315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8083D171DD2878F00DB6315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PW5ET5HNB2;
+				INFOPLIST_FILE = VirtualPetApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nathangitter.VirtualPetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D8083D181DD2878F00DB6315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PW5ET5HNB2;
+				INFOPLIST_FILE = VirtualPetApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nathangitter.VirtualPetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CBC51861E872A8C0067B36C /* Build configuration list for PBXNativeTarget "VirtualPetApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBC51841E872A8C0067B36C /* Debug */,
+				4CBC51851E872A8C0067B36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBC51881E872A8C0067B36C /* Build configuration list for PBXNativeTarget "VirtualPetApp WatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBC51821E872A8C0067B36C /* Debug */,
+				4CBC51831E872A8C0067B36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8083CFF1DD2878F00DB6315 /* Build configuration list for PBXProject "VirtualPetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8083D141DD2878F00DB6315 /* Debug */,
+				D8083D151DD2878F00DB6315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8083D161DD2878F00DB6315 /* Build configuration list for PBXNativeTarget "VirtualPetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8083D171DD2878F00DB6315 /* Debug */,
+				D8083D181DD2878F00DB6315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8083CFC1DD2878F00DB6315 /* Project object */;
+}
